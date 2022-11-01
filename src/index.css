@@ -5,9 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-image: url('https://media.istockphoto.com/photos/wood-texturewood-texture-background-floor-surface-picture-id486473384?k=20&m=486473384&s=170667a&w=0&h=qRlEPczw2-ts0GqPkM02nrZZPMS8v9guRD-GAAG-zQU=');
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+

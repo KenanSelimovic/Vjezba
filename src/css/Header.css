@@ -1,0 +1,23 @@
+
+header{
+    background-color: black;
+    height: 1rem;
+    position: sticky;
+    top:0;
+    width: 100vw;
+    height:4rem;
+    
+}
+a{
+    width: 30px;
+}
+.logo{
+    display: flex;
+    height: 100%;
+    width:auto;
+    object-fit: contain;
+    margin: auto;
+    vertical-align: middle;
+    min-height: auto;
+    
+}

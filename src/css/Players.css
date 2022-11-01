@@ -1,0 +1,51 @@
+
+li{
+    text-decoration: none;
+    list-style-type: none;
+    display: inline-block;
+}
+
+.dugmadi{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.disabled{
+    pointer-events: none;
+    cursor: not-allowed;
+    opacity: 0.65;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    box-shadow: none;}
+
+    #right,#left{
+        
+        position: relative;
+        border: none;
+        bottom: 0.4rem;
+        background-color: beige;
+        border-radius: 16px;
+        
+    }
+
+
+    #right a,
+    #left a{
+        padding: 0.7rem;
+        
+        display: block;
+       height: 100%;
+       width: 100%;
+        color: black;
+        font-weight: bold;
+        border-radius: 16px;
+    }
+
+    #right a:active,
+    #left a:active,#right a:hover,
+    #left a:hover{
+        background-color: black;
+        color: beige;
+    }

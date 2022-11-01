@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from "react";
+import { Redirect, Route, Switch } from "react-router-dom";
+import Header from "./components/Header";
+import Layout from "./components/Layout";
+import Players from "./components/Players";
+import PlayerStats from "./components/PlayerStats";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <div className="App">
+        <Switch>
+          <Route path={"/"} exact>
+            <Redirect to={"/players/1"}></Redirect>
+          </Route>
+          <Route path="/players/stats/:pId">
+            <PlayerStats />
+          </Route>
+          <Route path="/players/:pageNum" exact>
+            <Players></Players>
+          </Route>
+        </Switch>
+      </div>
+      </Layout>
   );
 }
 

@@ -1,0 +1,76 @@
+.infoContainer {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "basicInfo photo2Cont birajIStats"
+    "ime       tim        birajIStats";
+  justify-content: space-around;
+}
+.basicInfo {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 22rem;
+  height: 23rem;
+}
+
+.photo2Cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 22rem;
+  height: 23rem;
+}
+.birajIStats {
+  width: 280px;
+  height: 375px;
+}
+strong{
+  display:block;
+  margin-top: 1.2rem;
+}
+.biraj {
+  cursor: pointer;
+  background-color: beige;
+  
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  border: none;
+  color:black;
+outline: none;
+  padding: 10px 20px 10px 20px;
+}
+.biraj::-webkit-scrollbar {display:none;}
+.biraj::-moz-scrollbar {display:none;}
+.biraj::-o-scrollbar {display:none;}
+.biraj::-google-ms-scrollbar {display:none;}
+.biraj::-khtml-scrollbar {display:none;}
+
+.biraj:active{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.biraj .option{
+    cursor: pointer;
+}
+.ime,
+.tim {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.basicInfo img,
+.photo2Cont img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  background-color: beige;
+  margin: auto;
+  margin-top: 0.4rem;
+  border: 2px solid black;
+}
